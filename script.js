@@ -50,3 +50,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const initialHash = window.location.hash || '#website';
     showTab(initialHash);
 });
+
+// Collapsible visualization sections
+document.addEventListener('DOMContentLoaded', function() {
+    const visualizationTitles = document.querySelectorAll('.visualization-title');
+    
+    visualizationTitles.forEach(title => {
+        title.addEventListener('click', function() {
+            const section = this.getAttribute('data-section');
+            const content = document.querySelector(`.visualization-content[data-section="${section}"]`);
+            
+            // Toggle active state
+            this.classList.toggle('active');
+            content.classList.toggle('active');
+        });
+    });
+});
