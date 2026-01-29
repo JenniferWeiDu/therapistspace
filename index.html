@@ -96,19 +96,67 @@
             <h2>Website</h2>
             
             <div class="content-section">
-                <h3>About This Platform</h3>
+                <h3>Introduction</h3>
                 <p>
-                    This platform provides resources and information for peer therapists.
-                    Explore the different sections to find tools and support for your practice.
+                    I decided to create my website by myself with assistance from AI. I checked various hosting services, their costs, as well as the support they offered. In the end, I decided to choose GitHub to host my static psychotherapy website—it's free of charge. GitHub is a leading version control platform within the software engineering world, and its GitHub Copilot can help me create and update my website without needing to go into the code level to make changes myself. 
+                </p>
+                
+                <p>
+                    If you're a student, you also get free access to GitHub Copilot AI Pro as well as free domain service linked with GitHub (with student status verified). This makes it an even more attractive option for trainees who are setting up their first professional website.
                 </p>
 
-                <h3>What You'll Find Here</h3>
-                <ul>
-                    <li><strong>Website Resources:</strong> Information about peer therapy practices and approaches</li>
-                    <li><strong>Accounting Tools:</strong> Financial management resources for your practice</li>
-                    <li><strong>Visualization:</strong> Data visualization tools to track and understand your work</li>
-                    <li><strong>Contact:</strong> Ways to get in touch and connect with the community</li>
-                </ul>
+                <h3>Steps to Create Your Website</h3>
+                <p>
+                    <em>Note: These instructions are based on my experience using a Windows 11 system. The process may vary slightly on Mac or Linux.</em>
+                </p>
+
+                <div class="info-box">
+                    <h4>Quick Navigation</h4>
+                    <ul>
+                        <li><a href="#step1">1. Register with GitHub and Create a Repository</a></li>
+                        <li><a href="#step2">2. Download and Install Git Bash</a></li>
+                        <li><a href="#step3">3. Download and Install Visual Studio Code</a></li>
+                        <li><a href="#step4">4. Clone Your Repository and Create Your Website</a></li>
+                        <li><a href="#step5">5. Install Live Server and Preview Locally</a></li>
+                        <li><a href="#step6">6. Publish Your Website with GitHub Pages</a></li>
+                        <li><a href="#step7">7. Iterate and Improve</a></li>
+                    </ul>
+                </div>
+
+                <h4 id="step1">1. Register with GitHub and Create a Repository</h4>
+                <p>
+                    Start by creating a free account at <a href="https://github.com" target="_blank">GitHub.com</a>. Once you're logged in, create a new repository by clicking the "+" icon in the top right corner and selecting "New repository". Give it a meaningful name (for example, "psychotherapy-website"). Make sure to check the box to initialize with a README file. This repository will store all your website files and GitHub will automatically host it for free using GitHub Pages.
+                </p>
+
+                <h4 id="step2">2. Download and Install Git Bash</h4>
+                <p>
+                    Git Bash is a tool that allows you to interact with GitHub from your computer. Download it from <a href="https://git-scm.com/downloads" target="_blank">git-scm.com</a> and follow the installation wizard. You can use the default settings during installation. Git Bash will enable you to clone (download) your repository to your local machine and later push (upload) your changes back to GitHub.
+                </p>
+
+                <h4 id="step3">3. Download and Install Visual Studio Code</h4>
+                <p>
+                    Visual Studio Code (VS Code) is a free, powerful code editor where you'll work on your website. Download it from <a href="https://code.visualstudio.com" target="_blank">code.visualstudio.com</a>. After installation, you'll also want to install the GitHub Copilot extension from the Extensions marketplace within VS Code. This AI assistant will help you create and modify your website content without needing to learn coding from scratch.
+                </p>
+
+                <h4 id="step4">4. Clone Your Repository and Create Your Website</h4>
+                <p>
+                    Open VS Code and use the terminal (you can open it from the menu: Terminal → New Terminal). Use the command <code>git clone [your-repository-url]</code> to download your repository to your computer. You can find your repository URL on your GitHub repository page by clicking the green "Code" button. Once cloned, open the folder in VS Code. Now you can ask GitHub Copilot to help you create your website by describing what you want—for example, "Create a simple professional psychotherapy website with an about page and contact form."
+                </p>
+
+                <h4 id="step5">5. Install Live Server and Preview Locally</h4>
+                <p>
+                    In VS Code, install the "Live Server" extension from the Extensions marketplace. This allows you to preview your website locally on your computer before publishing it. Right-click on your HTML file and select "Open with Live Server" to see your website in a browser. Make changes, review them in real-time, and iterate until you're happy with how everything looks. When satisfied, use Git commands to commit your changes (<code>git add .</code>, <code>git commit -m "Initial website"</code>) and push them to GitHub (<code>git push</code>).
+                </p>
+
+                <h4 id="step6">6. Publish Your Website with GitHub Pages</h4>
+                <p>
+                    Once you've pushed your website files to GitHub, it's time to make your site publicly accessible. Go to your repository on GitHub.com and click on the "Settings" tab. In the left sidebar, find and click on "Pages" under the "Code and automation" section. Under "Source", select the branch you want to publish (usually "main" or "master"), and select the root folder ("/") as the source. Click "Save". GitHub will process your site, and within a few minutes, you'll see a message saying "Your site is live at https://[your-username].github.io/[repository-name]/". Click on that URL to see your live website!
+                </p>
+
+                <h4 id="step7">7. Iterate and Improve</h4>
+                <p>
+                    Website creation is an iterative process. Continue making improvements—ask GitHub Copilot to help you add new sections, adjust styling, or fix issues. Always preview changes locally with Live Server first, and when you're satisfied, commit and push your updates to GitHub. Your website will automatically update on GitHub Pages each time you push new changes. Over time, you'll build exactly the professional presence you want, with AI assistance every step of the way.
+                </p>
             </div>
         </section>
 
@@ -185,7 +233,7 @@
                 </p>
 
                 <div class="contact-info">
-                    <p><strong>Email:</strong> <a href="mailto:contact@therapistshut.com">contact@therapistshut.com</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:jennifer.wei.du@gmail.com">jennifer.wei.du@gmail.com</a></p>
                     <p><strong>Response Time:</strong> I typically respond within 24-48 hours</p>
                 </div>
 
