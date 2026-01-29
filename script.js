@@ -66,3 +66,36 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+// Hide/show navigation on scroll (for mobile)
+document.addEventListener('DOMContentLoaded', function() {
+    const nav = document.querySelector('nav');
+    let lastScrollTop = 0;
+    let scrollTimeout;
+    
+    window.addEventListener('scroll', function() {
+        // Clear the timeout throughout the scroll
+        clearTimeout(scrollTimeout);
+        
+        // Set a timeout to run after scrolling ends
+        scrollTimeout = setTimeout(function() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            // Only apply on mobile screens (less than 768px)
+            if (window.innerWidth <= 768) {
+                if (scrollTop > lastScrollTop && scrollTop > 100) {
+                    // Scrolling down & past 100px
+                    nav.classList.add('nav-hidden');
+                } else {
+                    // Scrolling up
+                    nav.classList.remove('nav-hidden');
+                }
+            } else {
+                // Always show on desktop
+                nav.classList.remove('nav-hidden');
+            }
+            
+            lastScrollTop = scrollTop;
+        }, 50); // Small delay to avoid too many calculations
+    }, { passive: true });
+});
