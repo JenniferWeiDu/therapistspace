@@ -109,11 +109,11 @@ h2 {
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 2.5rem;
     margin-bottom: 1rem;
     color: #2c3e50;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 h4 {
@@ -202,7 +202,7 @@ footer p {
 
 /* Visualization Styles */
 .research-section {
-    margin: 2rem 0 3rem 0;
+    margin: 1rem 0 1.5rem 0;
 }
 
 .research-section h4 {
@@ -224,8 +224,8 @@ footer p {
 
 .visualization-title {
     font-size: 1.4rem;
-    font-weight: 400;
-    color: #2c3e50;
+    font-weight: 300;
+    color: #666;
     margin: 0;
     padding: 0.5rem 0;
     cursor: pointer;
@@ -236,7 +236,7 @@ footer p {
 }
 
 .visualization-title:hover {
-    color: #1a252f;
+    color: #444;
 }
 
 .collapse-icon {
@@ -257,16 +257,16 @@ footer p {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.4s ease;
-    margin: 0;
+    margin: 0 !important;
 }
 
 .visualization-content.active {
-    max-height: 5000px;
-    margin: 2rem 0 3rem 0;
+    max-height: 1000px;
+    margin: 1rem 0 1.5rem 0 !important;
 }
 
 .visualization-container {
-    margin: 2rem 0 3rem 0;
+    margin: 1rem 0 1.5rem 0;
 }
 
 .visualization-placeholder {
