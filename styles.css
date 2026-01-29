@@ -196,6 +196,17 @@ footer p {
 }
 
 /* Visualization Styles */
+.research-section {
+    margin: 2rem 0 3rem 0;
+}
+
+.research-section h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-weight: 400;
+}
+
 .visualization-section {
     margin: 0.67rem 0;
     border-bottom: 1px solid #d4c5a9;
@@ -294,6 +305,32 @@ footer p {
 }
 
 .visualization-description p {
+    color: #444;
+    line-height: 1.8;
+}
+
+/* Community Styles */
+.community-item {
+    margin: 1.5rem 0;
+}
+
+.community-item h5 {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.community-item h5 a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.community-item h5 a:hover {
+    text-decoration: underline;
+}
+
+.community-item p {
+    margin-bottom: 0;
     color: #444;
     line-height: 1.8;
 }

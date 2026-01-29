@@ -42,12 +42,12 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Handle browser back/forward buttons
     window.addEventListener('popstate', function() {
-        const hash = window.location.hash || '#website';
+        const hash = window.location.hash || '#welcome';
         showTab(hash);
     });
     
     // Show the correct tab on page load based on URL hash
-    const initialHash = window.location.hash || '#website';
+    const initialHash = window.location.hash || '#welcome';
     showTab(initialHash);
 });
 
