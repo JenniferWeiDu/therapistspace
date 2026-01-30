@@ -1,0 +1,38 @@
+var CLIENTS = {
+  "ClientName": "clientEmail@email.com"
+};
+
+function sendTomorrowReminders() {
+  var calendar = CalendarApp.getCalendarById("b0ebdc66bb9dbe24b8f46ea78d4f10b56b141ec55218bcb2e01b6ead57d418dd@group.calendar.google.com");
+
+  // Tomorrow 00:00 → 23:59
+  var today = new Date();
+  var tomorrowStart = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1, 0, 0, 0);
+  var tomorrowEnd   = new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1, 23, 59, 59);
+
+  var events = calendar.getEvents(tomorrowStart, tomorrowEnd);
+
+  events.forEach(function(event) {
+    var clientName = event.getTitle();
+
+    if (CLIENTS[clientName]) {
+      var eventDate = event.getStartTime();
+
+      // Send email
+      MailApp.sendEmail({
+        to: CLIENTS[clientName],
+        subject: "Reminder - Therapy session on " + Utilities.formatDate(eventDate, Session.getScriptTimeZone(), "MMM d, yyyy 'at' HH:mm"),
+        body: "Hi " + clientName + ",\n\n" +
+              "This is a reminder for our upcoming session this " +
+              Utilities.formatDate(eventDate, Session.getScriptTimeZone(), "EEEE 'at' HH:mm") +
+              ".\nI will be looking forward to meeting with you soon.\n\n" +
+              "Warm wishes,\nJennifer\n07840232467\n\n" +
+              "W5 Therapy Room ONE\n" +
+              "Suite 27 Central Chambers\n" +
+              "The Broadway\n" +
+              "Ealing, W5 2NR"
+      });
+    }
+  });
+}
+
