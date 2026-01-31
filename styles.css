@@ -117,10 +117,11 @@ h3 {
 }
 
 h4 {
-    font-size: 1.05rem;
-    margin-bottom: 0.8rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
     color: #2c3e50;
-    font-weight: 300;
+    font-weight: 500;
 }
 
 .content-section {
